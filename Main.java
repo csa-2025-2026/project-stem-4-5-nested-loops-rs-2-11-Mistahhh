@@ -4,7 +4,7 @@ public class Main
 {
   public static void main(String[] args)
   {
-    // Make sure to test your methods here
+    Scanner scan = new Scanner(System.in);
   }
 
   public static void printNTimes(String word, int N)
@@ -24,18 +24,43 @@ public class Main
   {
     for (int row = 10; row >= -1; row--)
     {
-      for (int )
+      for (int num = 1; num <= row; num++)
+      {
+        System.out.print(row + " ");  
+      }
+      System.out.println(); 
     }
   }
 
   public static void uprightNumberTriangle(int N)
   {
-    // code solution here
+    System.out.println("Give me a number: ");
+    int n1 = scan.nextInt();
+    for (int row = 1; row <= N; row++)
+    {
+      for (int num = 1; num <= row; num++)
+      {
+        System.out.print(row + " ");  
+      }
+      System.out.println(); 
+    }
   }
 
   public static void starTree()
   {
-    // code solution here
+    int N = 9;
+
+    for (int row = 0; row < N; row++)
+    {
+      for (int blank = 0; blank < row; blank++)
+      {
+        System.out.print(" ");
+      }
+      for (int star = row; star < N; star++)
+      {
+        System.out.print("* ");
+      }
+        System.out.println();
   }
 
   public static void multTable()
