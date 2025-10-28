@@ -5,6 +5,9 @@ public class Main
   public static void main(String[] args)
   {
     Scanner scan = new Scanner(System.in);
+    System.out.println("Give me a number: ");
+    int N = scan.nextInt();
+    uprightNumberTriangle(N);
   }
 
   public static void printNTimes(String word, int N)
@@ -34,8 +37,6 @@ public class Main
 
   public static void uprightNumberTriangle(int N)
   {
-    System.out.println("Give me a number: ");
-    int n1 = scan.nextInt();
     for (int row = 1; row <= N; row++)
     {
       for (int num = 1; num <= row; num++)
@@ -61,10 +62,18 @@ public class Main
         System.out.print("* ");
       }
         System.out.println();
+    }
   }
-
   public static void multTable()
   {
-    // code solution here
+    for (int row = 1; row <= 10; row++)
+    {
+      for (int num = 1; num <= 10; num++)
+      {
+        int nextNum = (row * num);
+        System.out.print(nextNum + " ");
+      }
+      System.out.println();
+    }
   }
 }
